@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_EXTERNALDISCLAIMER_NAME</name>
+	<version>1.0.0</version>
+	<creationDate>April 2017</creationDate>
+	<author>Simon Champion</author>
+	<authorEmail>simon@simonchampion.net</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>(C) 2017 Simon Champion</copyright>
+	<license>GNU/GPLv2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description>PLG_SYSTEM_EXTERNALDISCLAIMER_DESCRIPTION</description>
+
+	<files>
+		<filename>index.html</filename>
+		<filename plugin="externaldisclaimer">externaldisclaimer.php</filename>
+	</files>
+    <media destination="plg_system_externaldisclaimer" folder="media">
+        <folder>js</folder>
+        <file>index.html</file>
+    </media>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_externaldisclaimer.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="internal" type="textarea" description="PLG_SYSTEM_EXTERNALDISCLAIMER_INTERNALDOMAINS_DESC" label="PLG_SYSTEM_EXTERNALDISCLAIMER_INTERNALDOMAINS_LABEL" default="" />
+				<field name="external" type="textarea" description="PLG_SYSTEM_EXTERNALDISCLAIMER_REDIRECTS_DESC" label="PLG_SYSTEM_EXTERNALDISCLAIMER_REDIRECTS_LABEL" default="" />
+				<field name="disclaimer" type="textarea" description="PLG_SYSTEM_EXTERNALDISCLAIMER_DISCLAIMER_DESC" label="PLG_SYSTEM_EXTERNALDISCLAIMER_DISCLAIMER_LABEL" default="Please be advised that this is a link to an external website. The operators of the this site cannot accept any responsibility for the content of this external site." />
+			</fieldset>
+		</fields>
+	</config>
+    <updateservers>
+        <server type="extension" priority="2" name="External Disclaimer Updates">https://raw.githubusercontent.com/Spudley/plg_system_externaldisclaimer/master/update.xml</server>
+    </updateservers>
+</extension>

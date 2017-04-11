@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+	<update>
+		<name>External Disclaimer</name>
+		<description>Pops up a disclaimer message when clicking on an external link within your site</description>
+		<element>externaldisclaimer</element>
+		<type>plugin</type>
+        <folder>content</folder>
+		<version>1.0.0</version>
+		<client>0</client>
+		<infourl title="External Disclaimer plugin">https://github.com/Spudley/plg_content_externaldisclaimer/releases/tag/1.1.0</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/Spudley/plg_content_externaldisclaimer/archive/1.1.0.zip</downloadurl>
+		</downloads>
+		<targetplatform name="joomla" version="3.[56789]" />
+        <php_minimum>5.4.0</php_minimum>
+	</update>
+</updates>
